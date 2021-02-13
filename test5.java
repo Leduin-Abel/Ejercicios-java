@@ -15,6 +15,9 @@ public class test5 {
 
         System.out.println(num1 + "x" + num2 +"=" + res);
 
+        input.close();
+        
+
 
     }
 
