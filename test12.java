@@ -14,7 +14,11 @@ public class test12 {
         System.out.print("Ingrese tercer numero: ");
         double num3=input.nextDouble();
 
-        System.out.println("El promedio de los numeros ingresados es: " + (num1+num2+num3)/3);
+        System.out.print("Ingrese cuarto numero: ");
+        double num4=input.nextDouble();
+        
+
+        System.out.println("El promedio de los numeros ingresados es: " + (num1+num2+num3+num4)/4);
         
 
         
