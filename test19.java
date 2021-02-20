@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class test20{
+public class test19{
     public static void main(String[] args){
    
         int numero;
