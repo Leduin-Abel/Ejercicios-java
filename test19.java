@@ -1,20 +1,16 @@
 import java.util.Scanner;
 
-public class test19{
+public class test20{
     public static void main(String[] args){
-        int numero=5;
-        int i=1;
-        String t;
-        int n;
-
-        
+   
+        int numero;
+        int i=0;
+        int[] binario= new int[20];
         Scanner entrada = new Scanner(System.in);
 
-            //System.out.print("Introduce un numero: ");                                                
-            //numero = entrada.nextInt();
-            t=String.valueOf(numero);
-            n=t.length();
-            int[] binario= new int[n];
+            System.out.print("Introduce un numero: ");                                                
+            numero = entrada.nextInt();
+            
 
             while(numero >=1){
                 binario[i++]=numero%2;
@@ -22,10 +18,9 @@ public class test19{
             }
     
             while(i>=0){
-                System.out.println(binario[i--]);
+                System.out.print(binario[i--]);
             }
             entrada.close();
-  
     }
 
     }
