@@ -1,0 +1,64 @@
+class punto2 {
+    public static void main(String[] args) {
+        int i, posAct, posSig;// buffer;
+        boolean HayOrden = false;
+        boolean pos0 = false;
+        boolean pos1 = false;
+        boolean pos2 = false;
+        boolean pos3 = false;
+        boolean pos4 = false;
+        int[] arreglo = new int[6];
+
+        for (i = 0; i <= 5; i++) {
+            arreglo[i] = (int) (Math.random() * 10);
+
+        }
+
+        while (HayOrden = false) {
+            for (i = 0; i <= 5; i++) {
+                posAct = arreglo[i];
+                posSig = arreglo[i + 1];
+                buffer = posAct;
+                System.out.println(pos0);
+                System.out.println(pos1);
+                System.out.println(pos2);
+                System.out.println(pos3);
+                System.out.println(pos4);
+                if (posAct >= posSig) {
+                    arreglo[i] = posSig;
+                    arreglo[i + 1] = posAct;
+
+                }
+
+            }
+            if (arreglo[0] <= arreglo[1] && arreglo[0] <= arreglo[2] && arreglo[0] <= arreglo[3]
+                    && arreglo[0] <= arreglo[4] && arreglo[0] <= arreglo[5]) {
+                pos0 = true;
+
+            }
+            if (arreglo[1] <= arreglo[2] && arreglo[1] <= arreglo[3] && arreglo[1] <= arreglo[4]
+                    && arreglo[1] <= arreglo[5]) {
+                pos1 = true;
+            }
+            if (arreglo[2] <= arreglo[3] && arreglo[2] <= arreglo[4] && arreglo[2] <= arreglo[5]) {
+                pos2 = true;
+            }
+            if (arreglo[3] <= arreglo[4] && arreglo[3] <= arreglo[5]) {
+                pos3 = true;
+            }
+            if (arreglo[4] <= arreglo[5]) {
+                pos4 = true;
+            }
+
+            if (pos0 == true && pos1 == true && pos2 == true && pos3 == true && pos4 == true) {
+                HayOrden = true;
+            }
+
+        }
+        for (i = 0; i <= 5; i++) {
+            System.out.println("Los numeros ordenados son " + arreglo[i]);
+
+        }
+
+    }
+}

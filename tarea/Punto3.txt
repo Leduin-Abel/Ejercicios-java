@@ -1,0 +1,21 @@
+class punto3 {
+    public static void main(String[] args) {
+        int i = 0;
+        int j = 0;
+        int buffer;
+        int[] A = { 1, 2, 3, 4 };
+        int[] B = new int[4];
+
+        for (i = 3; i >= 0; i--) {
+            B[j] = A[i];
+            j++;
+
+        }
+
+        for (i = 0; i <= 3; i++) {
+            A[i] = B[i];
+            System.out.println(A[i]);
+        }
+
+    }
+}

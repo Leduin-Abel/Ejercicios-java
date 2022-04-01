@@ -1,0 +1,27 @@
+class punto1 {
+
+    public static void main(String[] args) {
+        int A, i, posAct, posSig, j;
+        int[] arreglo = { 1, 2, 3, 4, 5, 6 };
+
+        A = arreglo.length;
+        for (i = 0; i < A - 1; i++) {
+            posAct = arreglo[i];
+            System.out.println("PosAct " + posAct);
+            posSig = arreglo[i + 1];
+            System.out.println("PosSig " + posSig);
+            if (posAct > posSig) {
+                System.out.println("El array no es ascendente\n");
+                for (j = 0; j < A - 1; j++) {
+                    System.out.println(arreglo[j]);
+                }
+                break;
+
+            } else if (i == (A - 1)) {
+                System.out.println("El array es ascendente");
+            }
+
+        }
+
+    }
+}
