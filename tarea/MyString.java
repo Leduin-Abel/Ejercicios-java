@@ -27,9 +27,6 @@ public class MyString {
         int i = 0;
         String[] fraseSeparada = frase.split("\\s+");
         int longitudFraseSeparada = fraseSeparada.length;
-        // ArrayList<String> fraseSeparada = new ArrayList<String>();
-        // fraseSeparada.add(frase.split("\\s+"));
-        // int longitudLista = fraseSeparada.size();
 
         for (i = 0; i < longitudFraseSeparada; i++) {
             MyString.Reverse(fraseSeparada[i]);
@@ -55,9 +52,6 @@ public class MyString {
         int letras = 0;
         int espacios = 0;
 
-        // String[] soloLetras = frase.split("\\s+");
-
-        // letras = soloLetras.length;
         for (char iteradorLetras : frase.toCharArray()) {
             if (iteradorLetras != ' ') {
                 letras++;
@@ -86,8 +80,6 @@ public class MyString {
 
     static void EliminarDuplicados(String frase) {
         String[] fraseSeparada = frase.split("\\s+");
-
-        String cadenaSinDuplicados = "";
 
         int longitudFraseSeparada = fraseSeparada.length;
 
